@@ -1,0 +1,97 @@
+/* line 2, ../sass/style.scss */
+.star {
+  cursor: pointer;
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: black;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid black;
+  border-left: 100px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+
+/* line 19, ../sass/style.scss */
+.star:before {
+  border-bottom: 80px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+
+/* line 36, ../sass/style.scss */
+.star:after {
+  position: absolute;
+  display: block;
+  color: black;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid black;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+  content: '';
+}
+
+/* line 55, ../sass/style.scss */
+.centrar {
+  position: absolute;
+  left: 39%;
+  top: 40%;
+}
+
+/* line 61, ../sass/style.scss */
+.arriva {
+  position: absolute;
+  left: 39%;
+  top: 20%;
+}
+
+/* line 67, ../sass/style.scss */
+.derecha {
+  position: absolute;
+  left: 65%;
+  top: 40%;
+}
+
+/* line 73, ../sass/style.scss */
+.abajo {
+  position: absolute;
+  left: 39%;
+  top: 70%;
+}
+
+/* line 79, ../sass/style.scss */
+.izquierda {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+
+/* line 84, ../sass/style.scss */
+#animacion {
+  transition: all .3s ease;
+}
