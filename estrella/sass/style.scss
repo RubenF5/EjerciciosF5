@@ -1,0 +1,86 @@
+//las tres classes de .star crean una estrella de 5 puntas
+.star { 
+    cursor: pointer;//le da otra imagen al cursor cundo haces hover
+    margin: 50px 0; 
+    position: relative; 
+    display: block; 
+    color: black; 
+    width: 0px; 
+    height: 0px; 
+    border-right: 100px solid transparent; 
+    border-bottom: 70px solid black; 
+    border-left: 100px solid transparent; 
+    -moz-transform: rotate(35deg); 
+    -webkit-transform: rotate(35deg); 
+    -ms-transform: rotate(35deg); 
+    -o-transform: rotate(35deg); 
+    transform: rotate(35deg);
+} 
+.star:before { 
+    border-bottom: 80px solid black; 
+    border-left: 30px solid transparent; 
+    border-right: 30px solid transparent; 
+    position: absolute; 
+    height: 0; 
+    width: 0; 
+    top: -45px; 
+    left: -65px; 
+    display: block; content: ''; 
+    -webkit-transform: rotate(-35deg); 
+    -moz-transform: rotate(-35deg); 
+    -ms-transform: rotate(-35deg); 
+    -o-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+
+}
+.star:after { 
+    position: absolute; 
+    display: block; 
+    color: black; 
+    top: 3px; 
+    left: -105px; 
+    width: 0px; 
+    height: 0px; 
+    border-right: 100px solid transparent; 
+    border-bottom: 70px solid black; 
+    border-left: 100px solid transparent; 
+    -webkit-transform: rotate(-70deg); 
+    -moz-transform: rotate(-70deg); 
+    -ms-transform: rotate(-70deg); 
+    -o-transform: rotate(-70deg);
+    transform: rotate(-70deg); 
+    content: ''; 
+}
+//esto centra la estrella
+.centrar{
+    position: absolute;
+    left: 39%;
+    top: 40%;
+}
+//esto la mueve hacia arriva
+.arriva{
+    position: absolute;
+    left: 39%;
+    top: 20%;
+}
+//esto la mueve hacia la derecha
+.derecha{
+    position: absolute;
+    left: 65%;
+    top: 40%;
+}
+//esto la mueve hacia abajo
+.abajo{
+    position: absolute;
+    left: 39%;
+    top: 70%;
+}
+//esto la mueve hacia la izquierda
+.izquierda{
+    position: absolute;
+    left: 15%;
+    top: 40%;
+}
+#animacion{
+    transition: all .3s ease; //esto que los cambios de classe vayan mas lentos
+}
